@@ -9,8 +9,13 @@
     "prestorybook": "npm run build",
     "storybook": "start-storybook -p 9001"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HichemBenChaaben/storybook-addon-linguijs.git"
+  },
+  "keywords": [ "storybook", "storybook-addon", "react-lingui", "i18n", "l10n" ],
+  "license": "MIT",
   "author": "Hichem benchaaben",
-  "license": "ISC",
   "dependencies": {
     "@lingui/react": "^2.8.3",
     "react": "^16.8.6"
