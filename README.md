@@ -40,7 +40,7 @@ const catalog = {
   }
 };
 
-// Set intl configuration
+// Set configuration
 setLinguiConfig({
   locales: [ 'en', 'fr' ],
   defaultLocale: 'en',
