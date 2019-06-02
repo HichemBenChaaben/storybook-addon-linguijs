@@ -1,7 +1,7 @@
 import React from 'react';
 import addons from '@storybook/addons';
-import LocalePanel from './containers/LocalePanel';
 import { ADDON_ID, PANEL_ID } from '../shared';
+import LocalePanel from '../manager/containers/LocalePanel/index';
 
 export function register() {
   addons.register(ADDON_ID, () => {
