@@ -54,3 +54,14 @@ addDecorator(withLingui);
 // Run storybook
 configure(() => require('./stories'), module);
 ```
+
+In your story you need to wrap your component with `<Trans>` or a `t` function from `@lingui/macro`
+
+
+```js
+storiesOf('Button', Module).add('with text', () =>
+  <Button>
+    <Trans>Hello Button</Trans>
+  </Button>
+);
+```
