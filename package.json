@@ -1,0 +1,39 @@
+{
+  "name": "storybook-addon-linguijs",
+  "version": "1.0.0",
+  "description": "Addon to provide locale switcher and linguijs react for storybook",
+  "main": "index.js",
+  "scripts": {
+    "build": "BABEL_ENV=production node ./scripts/build.js",
+    "prepublish": "npm run build",
+    "prestorybook": "npm run build",
+    "storybook": "start-storybook -p 9001"
+  },
+  "author": "Hichem benchaaben",
+  "license": "ISC",
+  "dependencies": {
+    "@lingui/react": "^2.8.3",
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@lingui/macro": "^2.8.3",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "install": "^0.12.2",
+    "npm": "^6.9.0",
+    "shelljs": "^0.8.3",
+    "storybook": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@storybook/addons": ">= 3.2.16",
+    "@storybook/react": ">= 3.2.16",
+    "react": ">= 15.4.0",
+    "@lingui/react": ">=2.8.0"
+  }
+}
