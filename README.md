@@ -16,15 +16,15 @@ _Note: Following peer dependencies are required: `@storybook/addons`, `@storyboo
 Add this line to your `addons.js` file (create this file inside your storybook config directory if needed).
 
 ```js
-import 'storybook-addon-intl/register';
+import 'storybook-addon-linguijs/register';
 ```
 
 In your `config.js` import the `setLinguiConfig` and `withLingui` function. Use `setLinguiConfig` to set the configuration
-for `lingui/react` and `withIntl´ as decorator.
+for `lingui/react` and `withLingui as decorator.
 
 ```js
 import { addDecorator, configure } from '@storybook/react';
-import { setIntlConfig, withLingui } from 'storybook-addon-intl';
+import { setIntlConfig, withLingui } from 'storybook-addon-linguijs';
 
 // Provide a catalog or import and use your existing one
 const catalog = {
