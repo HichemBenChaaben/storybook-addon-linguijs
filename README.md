@@ -24,20 +24,20 @@ for `lingui/react` and `withIntl´ as decorator.
 
 ```js
 import { addDecorator, configure } from '@storybook/react';
-import { setIntlConfig, withIntl } from 'storybook-addon-intl';
+import { setIntlConfig, withLingui } from 'storybook-addon-intl';
 
 // Provide a catalog or import and use your existing one
 const catalog = {
-    "en": {
-      messages: {
-        "Hello Button": "Hello Button"
-      }
-    },
-    "fr": {
-      messages: {
-        "Hello Button": "Bonjour Button"
-      }
-    },
+  "en": {
+    messages: {
+      "Hello Button": "Hello Button"
+    }
+  },
+  "fr": {
+    messages: {
+      "Hello Button": "Bonjour Button"
+    }
+  }
 };
 
 // Set intl configuration
