@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-linguijs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Addon to provide locale switcher and linguijs react for storybook",
   "main": "dist/index.js",
   "scripts": {
