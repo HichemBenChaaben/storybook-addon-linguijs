@@ -3,7 +3,7 @@ import addons from '@storybook/addons';
 import { ADDON_ID, PANEL_ID } from '../shared';
 import LocalePanel from '../manager/containers/LocalePanel/index';
 
-export default function register() {
+export function register() {
   addons.register(ADDON_ID, () => {
     addons.addPanel(PANEL_ID, {
       title: 'Locales',
