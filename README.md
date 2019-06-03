@@ -1,4 +1,5 @@
 # Lingui react Addon
+
 The linguijs react addon can be used to provide locale switcher and linguijs react.
 
 ![](docs/screenshot.png)
@@ -16,24 +17,24 @@ _Note: Following peer dependencies are required: `@storybook/addons`, `@storyboo
 Add this line to your `addons.js` file (create this file inside your storybook config directory if needed).
 
 ```js
-import 'storybook-addon-linguijs/register';
+import "storybook-addon-linguijs/register";
 ```
 
 In your `config.js` import the `setLinguiConfig` and `withLingui` function. Use `setLinguiConfig` to set the configuration
 for `lingui/react` and `withLingui as decorator.
 
 ```js
-import { addDecorator, configure } from '@storybook/react';
-import { setIntlConfig, withLingui } from 'storybook-addon-linguijs';
+import { addDecorator, configure } from "@storybook/react";
+import { setLinguiConfig, withLingui } from "storybook-addon-linguijs";
 
 // Provide a catalog or import and use your existing one
-const catalog = {
-  "en": {
+const catalogs = {
+  en: {
     messages: {
       "Hello Button": "Hello Button"
     }
   },
-  "fr": {
+  fr: {
     messages: {
       "Hello Button": "Bonjour Button"
     }
@@ -42,26 +43,26 @@ const catalog = {
 
 // Set configuration
 setLinguiConfig({
-  locales: [ 'en', 'fr' ],
-  defaultLocale: 'en',
+  locales: ["en", "fr"],
+  defaultLocale: "en",
   catalogs
 });
-
 
 // Register decorator
 addDecorator(withLingui);
 
 // Run storybook
-configure(() => require('./stories'), module);
+configure(() => require("./stories"), module);
 ```
 
 In your story you need to wrap your component with `<Trans>` or a `t` function from `@lingui/macro`
 
-
 ```js
-storiesOf('Button', Module).add('with text', () =>
+import { Trans } from "@lingui/macro";
+
+storiesOf("Button", Module).add("with text", () => (
   <Button>
     <Trans>Hello Button</Trans>
   </Button>
-);
+));
 ```
