@@ -1,2 +1,2 @@
-export { withLingui, setLinguiConfig } from './preview';
-export { register } from './register';
+export { withLingui, setLinguiConfig } from "./preview";
+export { register } from "./manager";

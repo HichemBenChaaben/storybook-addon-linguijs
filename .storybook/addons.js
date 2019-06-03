@@ -1,3 +1,1 @@
-import { register } from '../dist/';
-
-register();
+import "../register";

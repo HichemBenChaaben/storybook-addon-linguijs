@@ -13,7 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/HichemBenChaaben/storybook-addon-linguijs.git"
   },
-  "keywords": [ "storybook", "storybook-addon", "react-lingui", "i18n", "l10n" ],
+  "keywords": [
+    "storybook",
+    "storybook-addon",
+    "react-lingui",
+    "i18n",
+    "l10n"
+  ],
   "license": "MIT",
   "author": "Hichem benchaaben",
   "dependencies": {
