@@ -51,6 +51,11 @@ export default function LocalePanel(props) {
     );
   });
 
+
+  if (!props.active) {
+    return null
+  }
+
   return <div style={panelStyle}>{items}</div>;
 }
 
