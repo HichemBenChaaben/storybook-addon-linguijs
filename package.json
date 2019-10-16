@@ -3,6 +3,7 @@
   "version": "1.0.10",
   "description": "Addon to provide locale switcher and linguijs react for storybook",
   "main": "dist/index.js",
+  "typings": "types/index.d.ts",
   "scripts": {
     "build": "BABEL_ENV=production node ./scripts/build.js",
     "prepublish": "npm run build",
